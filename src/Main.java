@@ -8,7 +8,6 @@ public class Main {
                 System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
         }
 
-
         System.out.println(" ");
         System.out.println("Задание 2/1");
         int distance = 0;
