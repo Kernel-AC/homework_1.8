@@ -74,13 +74,14 @@ public class Main {
             minute++;
             if (minute % 10 == 0) {
                 overheats++;
+                minute += 2;
                 if (overheats > 3) {
                     break;
                 }
                 System.out.println("Перегрев, остановлена зарядка на 2 минуты.");
                 continue;
             }
-            minute += 2;
+
             charge += 2;
         }
         if (overheats > 3) {
