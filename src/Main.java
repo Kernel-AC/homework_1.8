@@ -3,9 +3,9 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задание 1");
-        int firstFriday = 3;
+        int firstFriday = 1;
         for (int i = 1; i <= 31; i++) {
-            if ((i - firstFriday) % 7 == 0 && i > firstFriday)
+            if ((i - firstFriday) % 7 == 0 )
                 System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
         }
 
@@ -80,7 +80,7 @@ public class Main {
                 System.out.println("Перегрев, остановлена зарядка на 2 минуты.");
                 continue;
             }
-
+            minute += 2;
             charge += 2;
         }
         if (overheats > 3) {
